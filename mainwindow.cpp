@@ -75,7 +75,7 @@ void MainWindow::turnOnHighlightCellIfNeeded(QVector<int> &indices)
         QTableWidgetItem *item = tableItems.at(indices.at(i));
         QColor color(Qt::red);
 
-        item->setBackgroundColor(color);
+        item->setForeground(color);
     }
 }
 
@@ -83,9 +83,9 @@ void MainWindow::turnOffHighlightCell()
 {
     for (int i = 0; i < tableItems.length(); i++) {
         QTableWidgetItem *item = tableItems.at(i);
-        QColor color(Qt::white);
+        QColor color(Qt::black);
 
-        item->setBackgroundColor(color);
+        item->setForeground(color);
     }
 }
 
