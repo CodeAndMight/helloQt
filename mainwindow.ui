@@ -7,53 +7,38 @@
     <x>0</x>
     <y>0</y>
     <width>640</width>
-    <height>480</height>
+    <height>431</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Поиск слова в таблице</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="wordLabel">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>51</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Слово</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="wordLineEdit">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>130</x>
       <y>10</y>
-      <width>461</width>
-      <height>31</height>
+      <width>501</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>14</pointsize>
      </font>
+    </property>
+    <property name="placeholderText">
+     <string>Слово</string>
     </property>
    </widget>
    <widget class="QPushButton" name="searchPushButton">
     <property name="geometry">
      <rect>
-      <x>540</x>
+      <x>70</x>
       <y>10</y>
-      <width>91</width>
-      <height>31</height>
+      <width>54</width>
+      <height>54</height>
      </rect>
     </property>
     <property name="font">
@@ -61,15 +46,22 @@
       <pointsize>14</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>Найти</string>
+    <property name="icon">
+     <iconset resource="Resources.qrc">
+      <normaloff>:/new/prefix1/icons/Search-icon.png</normaloff>:/new/prefix1/icons/Search-icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>48</width>
+      <height>48</height>
+     </size>
     </property>
    </widget>
    <widget class="QTableWidget" name="letterTableWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>50</y>
+      <y>70</y>
       <width>621</width>
       <height>351</height>
      </rect>
@@ -84,9 +76,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>410</y>
-      <width>621</width>
-      <height>31</height>
+      <y>10</y>
+      <width>54</width>
+      <height>54</height>
      </rect>
     </property>
     <property name="font">
@@ -94,22 +86,22 @@
       <pointsize>14</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>Загрузить таблицу символов</string>
+    <property name="icon">
+     <iconset resource="Resources.qrc">
+      <normaloff>:/new/prefix1/icons/open-file-icon.png</normaloff>:/new/prefix1/icons/open-file-icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>48</width>
+      <height>48</height>
+     </size>
     </property>
    </widget>
   </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

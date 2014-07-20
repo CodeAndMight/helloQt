@@ -20,3 +20,10 @@ HEADERS  += mainwindow.h \
     wordquest.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    Resources.qrc
+
+OTHER_FILES += \
+    README.md \
+    TestTable.txt
